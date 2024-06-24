@@ -1,0 +1,109 @@
+* {
+  color: bisque;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+body {
+  background-color: rgb(39, 41, 41);
+}
+
+header {
+  text-align: center;
+  padding: 1vw;
+}
+
+h1 {
+  color: rgba(232, 102, 236, 1);
+  font-size: 4rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 1vw;
+  padding-right: 1vw;
+}
+
+.card {
+  width: 30%;
+  border: 1px dashed bisque;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 1vh 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+.card .card-title {
+  transition: all 0.5s ease-in-out;
+  border: 1px solid bisque;
+  border-radius: 8px;
+  width: 95%;
+  color: rgba(232, 102, 236, 1);
+  position: relative;
+  top: -2rem;
+  background-color: rgb(39, 41, 41);
+  margin-bottom: 0;
+  padding: 5px;
+}
+
+.card .caption {
+  position: relative;
+  top: -0.5rem;
+  color: rgba(232, 102, 236, 1);
+  width: 95%;
+  margin-block-start: 0;
+  margin-bottom: 0;
+}
+
+.card .code {
+  width: 95%;
+  user-select: all;
+  padding: 10px;
+  padding-top: 15px;
+  height: max-content;
+  flex-grow: 1;
+  vertical-align: middle;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.linear-gradient-background {
+  background-image: linear-gradient(rgba(232, 102, 236, 0.3) 0%, rgba(232, 102, 236, 0.6) 100%);
+}
+
+.card:hover, .card:hover .card-title {
+  box-shadow: inset 0px 0px 8px rgba(232, 102, 236, 1), 0px 0px 15px rgba(232, 102, 236, 1);
+}
+
+footer {
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 992px) {
+  .card {
+    width: 45%;
+  } 
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    width: 90%;
+  } 
+}
